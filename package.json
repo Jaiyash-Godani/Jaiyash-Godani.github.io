@@ -2,7 +2,8 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "homepage": "https://jaiyash-godani.github.io/"
+  "homepage": "https://jaiyash-godani.github.io/",
+  "private": true,
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
