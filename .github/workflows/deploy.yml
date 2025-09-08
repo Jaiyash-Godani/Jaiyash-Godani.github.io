@@ -5,24 +5,30 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
+      # 1️⃣ Checkout the repo
       - uses: actions/checkout@v3
 
-      - name: Setup Node.js
+      # 2️⃣ Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: 18
 
-      - name: Install dependencies
+      # 3️⃣ Install dependencies
+      - name: Install Dependencies
         run: npm install
 
+      # 4️⃣ Build the React app
       - name: Build
         run: npm run build
 
+      # 5️⃣ Deploy to GitHub Pages
       - name: Deploy
-        run: |
-          npm install -g gh-pages
-          gh-pages -d build -r https://github.com/${{ github.repository }}.git
+        uses: peaceiris/actions-gh-pages@v6
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
