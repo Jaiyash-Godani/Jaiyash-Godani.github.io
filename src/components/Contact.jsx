@@ -1,5 +1,5 @@
 import React from "react";
-import { FaEnvelope, FaFiverr, FaTwitter } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
 
 function Contact() {
   return (
@@ -27,7 +27,7 @@ function Contact() {
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-xl transition"
           >
-            <FaFiverr className="text-green-400" /> Fiverr
+            <p className="text-green-400" > Fiverr</p>
           </a>
 
           {/* Twitter */}
@@ -37,7 +37,7 @@ function Contact() {
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-xl transition"
           >
-            <FaTwitter className="text-blue-400" /> X
+            <p className="text-white" > X </p>
           </a>
         </div>
       </div>
