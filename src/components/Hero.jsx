@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Hero() {
   return (
     <div className="relative w-full h-screen bg-dark flex items-center justify-center px-4">
-      {/* Profile image as main visual */}
+      {/* Profile image */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-8">
         <img
           src="/profile.png"
@@ -20,15 +20,18 @@ function Hero() {
             <span className="text-orange-400 font-semibold">Web Developer</span> 🚀
           </p>
           <div className="flex justify-center md:justify-start gap-4 mt-4">
+            {/* Full orange gradient button */}
             <Link
               to="/projects"
-              className="bg-gradient-to-r from-blue-500 to-teal-500 text-white py-2 px-6 rounded-full hover:bg-gradient-to-l transition duration-300"
+              className="bg-gradient-to-r from-orange-400 to-yellow-400 text-white py-2 px-6 rounded-full shadow-lg hover:brightness-105 transition"
             >
               View Projects
             </Link>
+
+            {/* Black with orange border button */}
             <Link
               to="/contact"
-              className="bg-gradient-to-r from-orange-500 to-yellow-500 text-white py-2 px-6 rounded-full hover:bg-gradient-to-l transition duration-300"
+              className="bg-black text-orange-400 border-2 border-orange-400 py-2 px-6 rounded-full shadow hover:bg-orange-400 hover:text-black transition"
             >
               Contact Me
             </Link>
