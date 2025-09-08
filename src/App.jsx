@@ -1,5 +1,6 @@
 // src/App.jsx
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -13,14 +14,17 @@ function App() {
   return (
     <div className="bg-dark min-h-screen">
       <Navbar />
-      <section id="home"><Hero /></section>
-      <section id="about"><About /></section>
-      <section id="services"><Services /></section>
-      <section id="projects"><Projects /></section>
-      <section id="skills"><Skills /></section>
-      <section id="blogs"><Blogs /></section>
-      <section id="contact"><Contact /></section>
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </div>
   );
 }
+
 export default App;
