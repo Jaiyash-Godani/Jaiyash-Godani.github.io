@@ -1,17 +1,17 @@
-
-import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="fixed top-0 w-full bg-black/40 backdrop-blur-lg z-50 shadow-md">
-      <ul className="flex justify-center space-x-6 py-4 text-white font-semibold">
-        {["Home", "About", "Services", "Projects", "Skills", "Blogs", "Contact"].map((item) => (
-          <li key={item}>
-            <a href={`#${item.toLowerCase()}`} className="hover:text-primary transition">{item}</a>
-          </li>
-        ))}
+    <nav className="fixed top-0 left-0 w-full p-4 bg-black/50 text-white">
+      <ul className="flex gap-4">
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/services">Services</Link></li>
+        <li><Link to="/projects">Projects</Link></li>
+        <li><Link to="/skills">Skills</Link></li>
+        <li><Link to="/blogs">Blogs</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
       </ul>
     </nav>
   );
 }
-export default Navbar;
