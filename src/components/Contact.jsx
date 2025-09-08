@@ -27,7 +27,7 @@ function Contact() {
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-xl transition"
           >
-            <p className="text-green-400" > Fiverr</p>
+            <p className="text-green-400 font-bold" > Fiverr</p>
           </a>
 
           {/* Twitter */}
