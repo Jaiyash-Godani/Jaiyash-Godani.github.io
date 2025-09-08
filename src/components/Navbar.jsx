@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 w-[90%] md:w-4/5 lg:w-3/5
-                    bg-white/10 backdrop-blur-md rounded-2xl shadow-lg border border-white/20
+                    bg-white/10 backdrop-blur-md rounded-full shadow-lg border border-white/20
                     z-50 p-4 flex justify-between items-center text-white">
       <div className="text-xl font-bold bg-clip-text text-transparent 
                       bg-gradient-to-r from-orange-400 to-yellow-400">
