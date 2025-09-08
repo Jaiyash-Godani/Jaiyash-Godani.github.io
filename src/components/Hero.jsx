@@ -23,7 +23,7 @@ function Hero() {
             {/* Full orange gradient button */}
             <Link
               to="/projects"
-              className="bg-gradient-to-r from-orange-400 to-yellow-400 text-white py-2 px-6 font-bold rounded-full shadow-lg hover:brightness-105 transition"
+              className="bg-gradient-to-r from-orange-400 to-yellow-400 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none  text-white py-2 px-6 font-bold rounded-full shadow-lg hover:brightness-105 transition"
             >
               View Projects
             </Link>
@@ -31,7 +31,7 @@ function Hero() {
             {/* Black with orange border button */}
             <Link
               to="/contact"
-              className="bg-black text-orange-400 border-2 border-orange-400 py-2 px-6 font-boldfont-bold rounded-full shadow hover:bg-orange-100 hover:text-black transition"
+              className="bg-black text-orange-400 border-2 border-orange-400 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none  py-2 px-6 font-boldfont-bold rounded-full shadow hover:bg-orange-200  transition"
             >
               Contact Me
             </Link>
