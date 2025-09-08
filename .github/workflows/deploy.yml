@@ -19,8 +19,8 @@ jobs:
           node-version: 18
 
       # 3️⃣ Install dependencies
-      #- name: Install Dependencies
-       # run: npm install
+      - name: Install Dependencies
+        run: npm install
 
       # 4️⃣ Build the React app
       - name: Build
