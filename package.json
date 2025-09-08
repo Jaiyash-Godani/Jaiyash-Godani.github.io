@@ -2,6 +2,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
+  "homepage": "https://Jaiyash-Godani.github.io"
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
