@@ -1,0 +1,14 @@
+{
+  "blog1": {
+    "name": "Building My First AI Project",
+    "desc": "How I created an AI workflow automation system at 14.",
+    "content": "This blog explains how I started with Streamlit + SQLite + automation workflows...",
+    "imgurl": "https://via.placeholder.com/600x300"
+  },
+  "blog2": {
+    "name": "React Portfolio Journey",
+    "desc": "Creating my portfolio with Tailwind and React.",
+    "content": "I designed a modern portfolio with Tailwind CSS, React components, and GitHub Pages deployment...",
+    "imgurl": "https://via.placeholder.com/600x300"
+  }
+}
