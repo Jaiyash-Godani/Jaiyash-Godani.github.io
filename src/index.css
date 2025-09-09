@@ -47,7 +47,9 @@ body {
 .shadow-glow {
   box-shadow: 0 0 20px rgba(249, 115, 22, 0.6);
 }
-
+.shadow-glows {
+  box-shadow: 0 0 20px #73706f99
+}
 .animate-float {
   animation: float 4s ease-in-out infinite;
 }
