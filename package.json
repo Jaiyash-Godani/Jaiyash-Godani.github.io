@@ -5,6 +5,8 @@
   "homepage": "https://jaiyash-godani.github.io/",
   "private": true,
   "dependencies": {
+    "@heroicons/react": "^2.0.18",
+    "react": "^18.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "^5.0.2",
