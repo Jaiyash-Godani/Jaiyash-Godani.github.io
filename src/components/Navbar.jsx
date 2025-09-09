@@ -17,7 +17,6 @@ export default function Navbar() {
       fixed top-6 left-1/2 transform -translate-x-1/2
       flex items-center justify-center z-50
       glass rounded-2xl
-      shadow-glass
       px-8 py-4
       w-fit
       bg-black/40
