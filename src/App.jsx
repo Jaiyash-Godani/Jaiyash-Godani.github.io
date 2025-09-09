@@ -1,8 +1,8 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import About from './components/About';
 import Hero from './components/Hero';
+import About from './components/About';
 import Skills from './components/Skills';
 import Services from './components/Services';
 import Projects from './components/Projects';
@@ -13,7 +13,7 @@ export default function App() {
   return (
     <Router>
       <Navbar />
-      <div className="pt-32 flex flex-col items-center min-h-screen">
+      <div className="pt-32 flex flex-col items-center min-h-screen w-full">
         <Routes>
           <Route path="/" element={<Hero />} />
           <Route path="/about" element={<About />} />
