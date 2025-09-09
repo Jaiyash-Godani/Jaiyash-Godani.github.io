@@ -40,4 +40,14 @@ export default function Services() {
             <a 
               href={service.urltoservice}
               target="_blank"
-              rel="noopener noreferrer
+              rel="noopener noreferrer"
+              className="inline-block w-full text-center bg-gradient-to-r from-orange-500 to-orange-600 px-6 py-3 rounded-xl text-black font-semibold hover:scale-105 transition-all duration-300 shadow-glow hover:shadow-glow-lg"
+            >
+              Learn More
+            </a>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
