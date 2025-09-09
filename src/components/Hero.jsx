@@ -1,45 +1,46 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
 
-function Hero() {
+export default function Hero() {
   return (
-    <div className="relative w-full h-screen bg-dark flex items-center justify-center px-4">
-      {/* Profile image */}
-      <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-        <img
-          src="/profile.png"
-          alt="Profile"
-          className="w-48 h-48 md:w-64 md:h-64 rounded-full shadow-2xl"
-        />
-        <div className="text-center md:text-left space-y-4">
-          <h1 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-orange-400 to-yellow-400 text-transparent bg-clip-text">
-            Hi, I’m Jaiyash
-          </h1>
-          <p className="text-gray-300 text-lg sm:text-xl">
-            14-year-old <span className="text-orange-400 font-semibold">AI Developer</span> &{" "}
-            <span className="text-orange-400 font-semibold">Web Developer</span> 🚀
-          </p>
-          <div className="flex justify-center md:justify-start gap-4 mt-4">
-            {/* Full orange gradient button */}
-            <Link
-              to="/projects"
-              className="bg-gradient-to-r from-orange-400 to-yellow-400 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none  text-white py-2 px-6 font-bold rounded-full shadow-lg hover:brightness-105 transition"
-            >
-              View Projects
-            </Link>
-
-            {/* Black with orange border button */}
-            <Link
-              to="/contact"
-              className="bg-black text-orange-400 border-2 border-orange-400 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none  py-2 px-6 font-boldfont-bold rounded-full shadow hover:bg-orange-200  transition"
-            >
-              Contact Me
-            </Link>
-          </div>
+    <section id="home" className="min-h-screen flex items-center justify-center px-4 pt-20">
+      <div className="text-center max-w-4xl mx-auto">
+        <div className="animate-fade-in">
+          <img 
+            src="/profile.png" 
+            alt="Jaiyash" 
+            className="w-32 h-32 mx-auto rounded-full border-4 border-orange-500 shadow-glow-lg mb-8 animate-float"
+          />
+        </div>
+        
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-slide-in">
+          <span className="gradient-text">Jaiyash</span>
+        </h1>
+        
+        <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in delay-200">
+          AI Engineer • Web Developer • Chess Enthusiast
+        </p>
+        
+        <div className="flex flex-wrap justify-center gap-4 mb-12 animate-fade-in delay-300">
+          <span className="glass px-4 py-2 rounded-full text-orange-400 border border-orange-500/30 hover:shadow-glow transition-all duration-300">
+            Machine Learning
+          </span>
+          <span className="glass px-4 py-2 rounded-full text-orange-400 border border-orange-500/30 hover:shadow-glow transition-all duration-300">
+            React Development
+          </span>
+          <span className="glass px-4 py-2 rounded-full text-orange-400 border border-orange-500/30 hover:shadow-glow transition-all duration-300">
+            AI Automation
+          </span>
+        </div>
+        
+        <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in delay-500">
+          <button className="glass-hover px-8 py-3 rounded-full text-white font-semibold hover:scale-105 transition-all duration-300 border border-orange-500/50 hover:shadow-glow">
+            View My Work
+          </button>
+          <button className="bg-gradient-to-r from-orange-500 to-orange-600 px-8 py-3 rounded-full text-black font-semibold hover:scale-105 transition-all duration-300 shadow-glow hover:shadow-glow-lg">
+            Get In Touch
+          </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
-
-export default Hero;
