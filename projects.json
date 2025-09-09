@@ -1,7 +1,20 @@
 {
-  "project1":{
-  "name":"FoodPointAI",
-  "desc":"A AI integrated food recommendation search and fraud detection system",
-  "url":"https://foodpointai-6dutp9qgfngbtx3rskylom.streamlit.app/"  
+  "project1": {
+    "name": "E-Commerce Platform",
+    "desc": "A full-stack e-commerce solution with React, Node.js, and MongoDB.",
+    "previmg": "/images/project1.jpg",
+    "urltosite": "https://ecommerce-demo.com"
+  },
+  "project2": {
+    "name": "AI Chat Application",
+    "desc": "Real-time chat application powered by AI and machine learning algorithms.",
+    "previmg": "/images/project2.jpg",
+    "urltosite": "https://ai-chat-demo.com"
+  },
+  "project3": {
+    "name": "Portfolio Dashboard",
+    "desc": "Analytics dashboard for tracking portfolio performance and metrics.",
+    "previmg": "/images/project3.jpg",
+    "urltosite": "https://portfolio-dashboard.com"
   }
 }

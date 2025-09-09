@@ -1,0 +1,20 @@
+{
+  "service1": {
+    "name": "AI Automation Services",
+    "desc": "Custom AI solutions and automation workflows to streamline your business processes.",
+    "previmg": "/images/service1.jpg",
+    "urltoservice": "https://fiverr.com/jaiyash/ai-automation"
+  },
+  "service2": {
+    "name": "Web Development",
+    "desc": "Full-stack web development with modern frameworks and responsive design.",
+    "previmg": "/images/service2.jpg",
+    "urltoservice": "https://fiverr.com/jaiyash/web-development"
+  },
+  "service3": {
+    "name": "ML Consulting",
+    "desc": "Machine learning consulting and model development for business applications.",
+    "previmg": "/images/service3.jpg",
+    "urltoservice": "https://fiverr.com/jaiyash/ml-consulting"
+  }
+}
