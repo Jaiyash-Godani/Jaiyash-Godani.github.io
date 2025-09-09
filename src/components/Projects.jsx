@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 
 function Projects() {
@@ -18,9 +18,9 @@ function Projects() {
           <div key={i} className="bg-black/50 rounded-2xl shadow-lg p-6">
             <h3 className="text-xl font-bold text-orange-400">{p.name}</h3>
             <p className="text-gray-400 mt-2">{p.desc}</p>
-            <button className="mt-4 px-4 py-2 bg-primary rounded-lg text-black font-semibold shadow-md hover:shadow-orange-500/50">
-              Read
-            </button>
+            <Link to={p.url} className="mt-4 px-4 py-2 bg-primary rounded-lg text-black font-semibold shadow-md hover:shadow-orange-500/50">
+              View Project
+            </Link>
           </div>
         ))}
       </div>
