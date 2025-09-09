@@ -16,7 +16,7 @@ export default function Hero() {
           <span className="gradient-text">Jaiyash</span>
         </h1>
         
-        <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in delay-200">
+        <p className="text-xl md:text-2xl sm:text-xl text-gray-300 mb-8 animate-fade-in delay-200">
           AI Engineer • Web Developer • Chess Enthusiast
         </p>
         
@@ -32,7 +32,7 @@ export default function Hero() {
           </span>
         </div>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in delay-500">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-2 animate-fade-in delay-500">
           <NavLink to="/projects" className="glass-hover px-8 py-3 rounded-full text-white font-semibold hover:scale-105 transition-all duration-300 border border-orange-500/50 hover:shadow-glow">
             View My Work
           </NavLink>
