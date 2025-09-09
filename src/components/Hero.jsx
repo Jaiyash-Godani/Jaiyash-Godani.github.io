@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { NavLink } from 'react-router-dom';
 export default function Hero() {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center px-4 pt-20">
@@ -8,7 +8,7 @@ export default function Hero() {
           <img 
             src="/profile.png" 
             alt="Jaiyash" 
-            className="w-32 h-32 mx-auto rounded-full border-4 border-orange-500 shadow-glow-lg mb-8 animate-float"
+            className="w-64 h-64 mx-auto rounded-full border-4 border-orange-500 shadow-glow-lg mb-8 animate-float"
           />
         </div>
         
@@ -33,12 +33,12 @@ export default function Hero() {
         </div>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in delay-500">
-          <button className="glass-hover px-8 py-3 rounded-full text-white font-semibold hover:scale-105 transition-all duration-300 border border-orange-500/50 hover:shadow-glow">
+          <NavLink to="/projects" className="glass-hover px-8 py-3 rounded-full text-white font-semibold hover:scale-105 transition-all duration-300 border border-orange-500/50 hover:shadow-glow">
             View My Work
-          </button>
-          <button className="bg-gradient-to-r from-orange-500 to-orange-600 px-8 py-3 rounded-full text-black font-semibold hover:scale-105 transition-all duration-300 shadow-glow hover:shadow-glow-lg">
+          </NavLink>
+          <NavLink to="/contact"className="bg-gradient-to-r from-orange-500 to-orange-600 px-8 py-3 rounded-full text-black font-semibold hover:scale-105 transition-all duration-300 shadow-glow hover:shadow-glow-lg">
             Get In Touch
-          </button>
+          </NavLink>
         </div>
       </div>
     </section>
