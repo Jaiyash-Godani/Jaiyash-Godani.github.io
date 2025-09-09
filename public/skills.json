@@ -2,21 +2,21 @@
   "skill1": {
     "name": "React.js",
     "desc about what I know in it": "Expert in building scalable React applications with hooks, context API, and modern patterns. Experienced in component architecture and performance optimization.",
-    "logo": "/icons/react.svg"
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
   },
   "skill2": {
     "name": "Python",
-    "desc about what I know in it": "Advanced Python programming for web development, data analysis, and AI/ML. Proficient in Django, Flask, and data science libraries.",
-    "logo": "/icons/python.svg"
+    "desc about what I know in it": "Advanced Python programming for web development, data analysis, and AI/ML. Proficient in Django, FastAPI, LangGraph and data science libraries.",
+    "logo": "https://image.shutterstock.com/image-vector/vector-illustration-icon-python-programming-250nw-1405339748.jpg"
   },
   "skill3": {
-    "name": "Machine Learning",
-    "desc about what I know in it": "Experienced in building ML models using TensorFlow, scikit-learn, and PyTorch. Focus on NLP, computer vision, and predictive analytics.",
-    "logo": "/icons/ml.svg"
+    "name": "ML & Deep Learning",
+    "desc about what I know in it": "Experienced in building ML models using TensorFlow, scikit-learn, . Focus on NLP, computer vision, and predictive analytics.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Tensorflow_logo.svg/449px-Tensorflow_logo.svg.png"
   },
   "skill4": {
     "name": "Node.js",
-    "desc about what I know in it": "Backend development with Node.js, Express.js, and database integration. API development and server-side optimization.",
-    "logo": "/icons/nodejs.svg"
+    "desc about what I know in it": "Backend development with Node.js, Express.js, and database integration using MongoDB or SQL. API development and server-side optimization.",
+    "logo": "https://cdn.iconscout.com/icon/free/png-256/free-node-js-icon-svg-png-download-1174925.png?f=webp"
   }
 }
