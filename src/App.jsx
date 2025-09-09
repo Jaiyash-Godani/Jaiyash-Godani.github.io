@@ -1,37 +1,29 @@
-import { useState } from 'react';
+import React from 'react';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import About from './components/About';
-import Blogs from './components/Blogs';
-import Projects from './components/Projects';
+import Hero from './components/Hero';
 import Skills from './components/Skills';
 import Services from './components/Services';
+import Projects from './components/Projects';
+import Blogs from './components/Blogs';
 import Contact from './components/Contact';
 
-function App() {
-  const [page, setPage] = useState('home');
-
-  const renderPage = () => {
-    switch (page) {
-      case 'about': return <About />;
-      case 'blogs': return <Blogs />;
-      case 'projects': return <Projects />;
-      case 'skills': return <Skills />;
-      case 'services': return <Services />;
-      case 'contact': return <Contact />;
-      default: return (
-        <>
-          <Hero />
-        </>
-      );
-    }
-  };
-
+export default function App() {
   return (
-    <div className="relative min-h-screen flex flex-col bg-gradient-to-br from-black via-gray-900 to-black text-white overflow-x-hidden">
-      <Navbar setPage={setPage} />
-      <div className="flex-1 pt-20 px-4">{renderPage()}</div>
-    </div>
+    <Router>
+      <Navbar />
+      <div className="pt-32 flex flex-col items-center min-h-screen">
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
-
-export default App;
