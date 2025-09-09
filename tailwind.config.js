@@ -1,13 +1,24 @@
-// tailwind.config.js
+
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: ["./src/**/*.{js,jsx}", "./public/index.html"],
   theme: {
     extend: {
       colors: {
-        primary: "#FF6A00", // orange accent
-        dark: "#0A0A0A"
+        'glass-black': '#0d0d0f',
+        'glass-orange': '#ff6600',
+        'glass-gradient': 'linear-gradient(135deg, #141414, #ff6600)',
+      },
+      boxShadow: {
+        'glassy': '0 8px 16px rgba(0,0,0,0.3)',
+        'deep': '0 4px 20px rgba(0,0,0,0.5)',
+      },
+      borderRadius: {
+        'full': '9999px',
+      },
+      fontSize: {
+        'xxs': '0.6rem',
       }
-    }
+    },
   },
-  plugins: []
-}
+  plugins: [],
+};
