@@ -2,10 +2,10 @@
   "project1": {
     "name": "Food-Point AI",
     "desc": "A AI restaraunt provider that recommendends food, do review fraud detection and advanced search. It also uses caching to prevent extensive token usage.",
-    "previmg": "https://p12.f2.n0.cdn.zight.com/items/5zuqPKmm/57925580-0735-49a0-86d2-b17e57c04fcd.png?source=viewer&v=22d10fd0c6e4741ef34d94a96eb87a5f",
+    "previmg": "https://p12.f2.n0.cdn.zight.com/items/qGuGxbxE/3cae7c4f-434a-44ae-8673-bb2160cb5066.png?v=d3097315e5b47ee53bf5878dc9489f8d",
     "urltosite": "https://foodpointai-6dutp9qgfngbtx3rskylom.streamlit.app/"
   },
-  "project2": { 
+  "project2": {
     "name": "AI Chat Application",
     "desc": "Real-time chat application powered by AI and machine learning algorithms.",
     "previmg": "/images/project2.jpg",
