@@ -38,9 +38,7 @@ export default function Skills() {
               {skill["desc about what I know in it"]}
             </p>
             
-            <div className="mt-4 h-2 bg-gray-700 rounded-full">
-              <div className="h-2 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full group-hover:animate-pulse"
-                   style={{ width: '85%' }}></div>
+    
             </div>
           </div>
         ))}
