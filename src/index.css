@@ -1,10 +1,10 @@
-/* src/index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  background: #0A0A0A;
-  color: white;
+  background: linear-gradient(135deg, #141414, #ff6600);
   font-family: 'Inter', sans-serif;
+  margin: 0;
+  min-height: 100vh;
 }
