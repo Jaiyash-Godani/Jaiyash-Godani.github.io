@@ -36,7 +36,7 @@ export default function Navbar() {
                  hover:text-orange-400 hover:bg-black/30
                  ${
                    isActive
-                     ? "bg-orange-400/10 text-orange-400 scale-110 shadow-glow"
+                     ? "bg-black text-orange-400 scale-110 shadow-glow"
                      : "text-white"
                  }`
               }
