@@ -1,14 +1,18 @@
 {
   "blog1": {
-    "name": "Building My First AI Project",
-    "desc": "How I created an AI workflow automation system at 14.",
-    "content": "This blog explains how I started with Streamlit + SQLite + automation workflows...",
-    "imgurl": "https://via.placeholder.com/600x300"
+    "name": "Building Modern React Apps",
+    "desc": "Learn how to build scalable React applications with modern tools and best practices.",
+    "previmg": "/images/blog1.jpg",
+    "content": "<h1>Building Modern React Apps</h1><p>React has revolutionized the way we build user interfaces...</p><h2>Key Concepts</h2><ul><li>Component Architecture</li><li>State Management</li><li>Performance Optimization</li></ul>"
   },
   "blog2": {
-    "name": "React Portfolio Journey",
-    "desc": "Creating my portfolio with Tailwind and React.",
-    "content": "I designed a modern portfolio with Tailwind CSS, React components, and GitHub Pages deployment...",
-    "imgurl": "https://via.placeholder.com/600x300"
-  }
-}
+    "name": "AI in Web Development",
+    "desc": "Exploring how artificial intelligence is transforming web development workflows.",
+    "previmg": "/images/blog2.jpg",
+    "content": "<h1>AI in Web Development</h1><p>Artificial Intelligence is reshaping how we approach web development...</p><h2>Applications</h2><ul><li>Code Generation</li><li>Automated Testing</li><li>User Experience Enhancement</li></ul>"
+  },
+  "blog3": {
+    "name": "Glassmorphism Design Trends",
+    "desc": "Understanding the glassmorphism design trend and how to implement it effectively.",
+    "previmg": "/images/blog3.jpg",
+    "content": "<h1>Glassmorphism Design Trends</h1><p>Glassmorphism has become one of the most popular design trends...</p><h2>Implementation Tips</h2><ul><li>Backdrop Filters</li><li>Subtle Borders</li><li>Transparency
