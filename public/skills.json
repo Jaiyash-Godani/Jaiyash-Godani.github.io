@@ -1,0 +1,22 @@
+{
+  "skill1": {
+    "name": "React.js",
+    "desc about what I know in it": "Expert in building scalable React applications with hooks, context API, and modern patterns. Experienced in component architecture and performance optimization.",
+    "logo": "/icons/react.svg"
+  },
+  "skill2": {
+    "name": "Python",
+    "desc about what I know in it": "Advanced Python programming for web development, data analysis, and AI/ML. Proficient in Django, Flask, and data science libraries.",
+    "logo": "/icons/python.svg"
+  },
+  "skill3": {
+    "name": "Machine Learning",
+    "desc about what I know in it": "Experienced in building ML models using TensorFlow, scikit-learn, and PyTorch. Focus on NLP, computer vision, and predictive analytics.",
+    "logo": "/icons/ml.svg"
+  },
+  "skill4": {
+    "name": "Node.js",
+    "desc about what I know in it": "Backend development with Node.js, Express.js, and database integration. API development and server-side optimization.",
+    "logo": "/icons/nodejs.svg"
+  }
+}
