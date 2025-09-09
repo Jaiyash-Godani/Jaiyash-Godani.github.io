@@ -1,68 +1,66 @@
-import { Disclosure } from "@headlessui/react";
-import { MenuIcon, XIcon } from "@heroicons/react/outline"; // npm install @heroicons/react
-import { Link } from "react-router-dom";
+import { Fragment } from 'react';
+import { Menu, Transition } from '@headlessui/react';
 
-const navigation = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Services", href: "/services" },
-  { name: "Projects", href: "/projects" },
-  { name: "Skills", href: "/skills" },
-  { name: "Blogs", href: "/blogs" },
-  { name: "Contact", href: "/contact" },
+const navItems = [
+  { name: 'Home', page: 'home' },
+  { name: 'Portfolio', page: 'about' },
+  { name: 'Skills', page: 'skills' },
+  { name: 'Services', page: 'services' },
+  { name: 'Projects', page: 'projects' },
+  { name: 'Blogs', page: 'blogs' },
+  { name: 'Contact', page: 'contact' },
 ];
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
-
-export default function Navbar() {
+export default function Navbar({ setPage }) {
   return (
-    <Disclosure as="nav" className="fixed top-0 w-full z-50 bg-black/30 backdrop-blur-md shadow-lg">
-      {({ open }) => (
-        <>
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="flex h-16 items-center justify-between">
-              <h1 className="text-xl font-bold bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent">
-                Jaiyash
-              </h1>
-
-              {/* Desktop menu */}
-              <div className="hidden md:flex space-x-6">
-                {navigation.map((item) => (
-                  <Link
-                    key={item.name}
-                    to={item.href}
-                    className="text-gray-200 hover:text-orange-400 transition"
+    <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 w-11/12 max-w-6xl backdrop-blur-xl bg-black/40 border border-orange-500 rounded-3xl shadow-glassy z-50 flex items-center justify-between px-6 py-3 transition-all duration-500 hover:scale-105">
+      <div className="flex items-center space-x-4">
+        <img src="/profile.png" alt="Profile" className="w-12 h-12 rounded-full border-2 border-orange-500 shadow-lg" />
+        <h1 className="text-2xl font-bold text-orange-400 drop-shadow-lg">My Portfolio</h1>
+      </div>
+      <ul className="hidden md:flex space-x-8 font-semibold text-orange-300 uppercase cursor-pointer transition-transform hover:scale-105">
+        {navItems.map((item) => (
+          <li
+            key={item.name}
+            onClick={() => setPage(item.page)}
+            className="hover:text-orange-500 transition-colors duration-200"
+          >
+            {item.name}
+          </li>
+        ))}
+      </ul>
+      {/* Mobile menu */}
+      <Menu as="div" className="relative md:hidden">
+        <Menu.Button className="p-2 rounded-full bg-orange-500 hover:bg-orange-600 transition">
+          <div className="w-6 h-6 border-2 border-white rounded-full"></div>
+        </Menu.Button>
+        <Transition
+          as={Fragment}
+          enter="transition ease-out duration-300"
+          enterFrom="opacity-0 translate-y-2"
+          enterTo="opacity-100 translate-y-0"
+          leave="transition ease-in duration-150"
+          leaveFrom="opacity-100 translate-y-0"
+          leaveTo="opacity-0 translate-y-2"
+        >
+          <Menu.Items className="absolute right-0 mt-2 w-48 bg-black/80 backdrop-blur-lg border border-orange-500 rounded-xl shadow-glassy z-50 p-2">
+            {navItems.map((item) => (
+              <Menu.Item key={item.name}>
+                {({ active }) => (
+                  <button
+                    onClick={() => setPage(item.page)}
+                    className={`w-full text-left px-4 py-2 rounded-lg transition ${
+                      active ? 'bg-orange-600 text-white' : 'text-orange-200'
+                    }`}
                   >
                     {item.name}
-                  </Link>
-                ))}
-              </div>
-
-              {/* Mobile menu button */}
-              <div className="md:hidden">
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-200 hover:bg-orange-400/20 focus:outline-none">
-                  {open ? <XIcon className="h-6 w-6" /> : <MenuIcon className="h-6 w-6" />}
-                </Disclosure.Button>
-              </div>
-            </div>
-          </div>
-
-          {/* Mobile menu items */}
-          <Disclosure.Panel className="md:hidden bg-black/80 px-4 pt-2 pb-3 space-y-1">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                className="block rounded-md px-3 py-2 text-gray-200 hover:bg-orange-400 hover:text-black"
-              >
-                {item.name}
-              </Link>
+                  </button>
+                )}
+              </Menu.Item>
             ))}
-          </Disclosure.Panel>
-        </>
-      )}
-    </Disclosure>
+          </Menu.Items>
+        </Transition>
+      </Menu>
+    </nav>
   );
 }
