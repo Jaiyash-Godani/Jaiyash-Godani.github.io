@@ -1,9 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Disclosure, Transition } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon } from '
-@heroicons/react
-/24/outline';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navItems = [
 { name: 'Home', path: '/' },
