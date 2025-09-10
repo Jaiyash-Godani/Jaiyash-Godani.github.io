@@ -62,8 +62,8 @@ Jaiyash
 {/* Desktop navigation centered */}
 <nav className="hidden md:block">
 <ul className="flex items-center gap-2">
-{http://navItems.map((item, index) => (
-<li key={http://item.name}>
+{navItems.map((item, index) => (
+<li key={item.name}>
 <NavLink
 to={item.path}
 end={item.path === '/'}
@@ -85,7 +85,7 @@ ${index === 0 || index === navItems.length - 1 ? 'font-semibold' : ''}
 `
 }
 >
-<span className="relative z-10">{http://item.name}</span>
+<span className="relative z-10">{item.name}</span>
 {/* Active indicator */}
 <span className={`
 absolute inset-0 rounded-xl
@@ -121,8 +121,8 @@ origin-top
 {({ close }) => (
 <nav className="px-4 py-6">
 <ul className="flex flex-col gap-2">
-{http://navItems.map((item) => (
-<li key={http://item.name}>
+{navItems.map((item) => (
+<li key={item.name}>
 <NavLink
 to={item.path}
 end={item.path === '/'}
@@ -144,7 +144,7 @@ isActive
 `
 }
 >
-{http://item.name}
+{item.name}
 </NavLink>
 </li>
 ))}
